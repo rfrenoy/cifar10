@@ -32,7 +32,7 @@ def load_training_set():
     Load training data for CIFAR10
     :return: dictionnary with 'data' and 'labels' keys
     """
-    train_data_files = ['data/data_batch_{}'.format(i) for i in range(1, 6)]
+    train_data_files = ['../data/data_batch_{}'.format(i) for i in range(1, 6)]
     return create_dataset_as_dict(train_data_files)
 
 
@@ -41,7 +41,7 @@ def load_test_set():
     Load test data for CIFAR10
     :return: dictionnary with 'data' and 'labels' keys
     """
-    test_data_file = ['data/test_batch']
+    test_data_file = ['../data/test_batch']
     return create_dataset_as_dict(test_data_file)
 
 
@@ -50,5 +50,5 @@ def load_metadata():
     Load metadata for CIFAR10
     :return: dictionnary with 'label_names' key
     """
-    return unpickle('data/batches.meta')
+    return unpickle('../data/batches.meta')
 

@@ -1,7 +1,7 @@
 import os
 import sys
 import unittest
-import mock
+import unittest.mock as mock
 
 from cifar import load
 from io import StringIO
